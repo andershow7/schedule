@@ -5,7 +5,7 @@ This project is an example using the Quartz Scheduler with Spring Boot.
     @EnableScheduling is used to enable support for scheduling tasks and @Scheduled annotation.
     @Scheduled is used in the method to perform the scheduling.
 
-**Properties for @Scheduled:**<br />
+<h2>**Properties for @Scheduled:**</h2><br />
 **cron** - A cron-like expression, extending the usual UN*X definition to include triggers on the second as well as minute, hour, day of month, month and day of week.<br />
 **long fixedDelay** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.<br />
 **String fixedDelayString** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.<br />
@@ -15,7 +15,7 @@ This project is an example using the Quartz Scheduler with Spring Boot.
 **String initialDelayString** - Number of milliseconds to delay before the first execution of a fixedRate() or fixedDelay() task.<br />
 **String zone** - A time zone for which the cron expression will be resolved.<br />
 
-**Cron expression:**<br />
+<h2>**Cron expression:**</h2><br />
 
     <second> <minute> <hour> <day-of-month> <month> <day-of-week> <year>(optional)
 
@@ -28,7 +28,7 @@ This project is an example using the Quartz Scheduler with Spring Boot.
 **W (weekday)** – it is used to specify the weekday (Monday to Friday) nearest to a given day of the month. For example, if we specify “10W” in the <day-of-month> field, then it means the “weekday near to 10th of that month”. So if “10th” is a Saturday, then the job will be triggered on “9th”, and if “10th” is a Sunday, then it will trigger on “11th”. If you specify “1W” in the <day-of-month> and if “1st” is Saturday, then the job will be triggered on “3rd” which is Monday, and it will not jump back to the previous month<br />
 **#** – it is used to specify the “N-th” occurrence of a weekday of the month, for example, “3rd Friday of the month” can be indicated as “6#3“<br />
 
-**Example patterns:**<br />
+<h2>**Example patterns:**</h2><br />
 
 "0 0 * * * *" = the top of every hour of every day.<br />
 "*/10 * * * * *" = every ten seconds.<br />
