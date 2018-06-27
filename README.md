@@ -6,7 +6,7 @@ This project is an example using the Quartz Scheduler with Spring Boot.
     @Scheduled is used in the method to perform the scheduling.
 
 **Properties for @Scheduled:**
-**cron** - A cron-like expression, extending the usual UN ***** X definition to include triggers on the second as well as minute, hour, day of month, month and day of week.
+**cron** - A cron-like expression, extending the usual UN*X definition to include triggers on the second as well as minute, hour, day of month, month and day of week.
 **long fixedDelay** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
 **String fixedDelayString** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
 **long	fixedRate** - Execute the annotated method with a fixed period in milliseconds between invocations.
