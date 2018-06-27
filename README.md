@@ -5,7 +5,7 @@ This project is an example using the Quartz Scheduler with Spring Boot.
     @EnableScheduling is used to enable support for scheduling tasks and @Scheduled annotation.
     @Scheduled is used in the method to perform the scheduling.
 
-**Properties for @Scheduled:**
+**Properties for @Scheduled:**\n
 **cron** - A cron-like expression, extending the usual UN*X definition to include triggers on the second as well as minute, hour, day of month, month and day of week.
 **long fixedDelay** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
 **String fixedDelayString** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
