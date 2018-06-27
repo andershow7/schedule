@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: schedule
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 001116795
+Implementation-Vendor-Id: com.schedule
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/schedule
+Created-By: Maven Integration for Eclipse
+
