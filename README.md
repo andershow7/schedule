@@ -2,28 +2,24 @@
 
 This project is an example using the Quartz Scheduler with Spring Boot.
 
-
-
     @EnableScheduling is used to enable support for scheduling tasks and @Scheduled annotation.
     @Scheduled is used in the method to perform the scheduling.
 
 **Properties for @Scheduled:**
 **cron** - A cron-like expression, extending the usual UN ***** X definition to include triggers on the second as well as minute, hour, day of month, month and day of week.
 **long fixedDelay** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
-**String	fixedDelayString** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
-long	fixedRate - Execute the annotated method with a fixed period in milliseconds between invocations.
-String	fixedRateString - Execute the annotated method with a fixed period in milliseconds between invocations.
-long	initialDelay - Number of milliseconds to delay before the first execution of a fixedRate() or fixedDelay() task.
-String	initialDelayString - Number of milliseconds to delay before the first execution of a fixedRate() or fixedDelay() task.
-String	zone - A time zone for which the cron expression will be resolved.
+**String fixedDelayString** - Execute the annotated method with a fixed period in milliseconds between the end of the last invocation and the start of the next.
+**long	fixedRate** - Execute the annotated method with a fixed period in milliseconds between invocations.
+**String fixedRateString** - Execute the annotated method with a fixed period in milliseconds between invocations.
+**long	initialDelay** - Number of milliseconds to delay before the first execution of a fixedRate() or fixedDelay() task.
+**String initialDelayString** - Number of milliseconds to delay before the first execution of a fixedRate() or fixedDelay() task.
+**String zone** - A time zone for which the cron expression will be resolved.
 
 **Cron expression:**
 
-
-
     <second> <minute> <hour> <day-of-month> <month> <day-of-week> <year>(optional)
 
-*** (all)** – it is used to specify that event should happen for every time unit. For example, “*” in the <minute> field – means “for every minute”
+**** (all)** – it is used to specify that event should happen for every time unit. For example, “*” in the <minute> field – means “for every minute”
 **? (any)** – it is utilized in the <day-of-month> and <day-of -week> fields to denote the arbitrary value – neglect the field value. For example, if we want to fire a script at “5th of every month” irrespective of what the day of the week falls on that date, then we specify a “?” in the <day-of-week> field
 **– (range)** – it is used to determine the value range. For example, “10-11” in <hour> field means “10th and 11th hours”
 , (values) – it is used to specify multiple values. For example, “MON, WED, FRI” in <day-of-week> field means on the days “Monday, Wednesday, and Friday”
