@@ -2,7 +2,7 @@
 
 This project is an example using the Quartz Scheduler with Spring Boot.
 
-    @EnableScheduling is used to enable support for scheduling tasks and @Scheduled annotation.
+    **@EnableScheduling** is used to enable support for scheduling tasks and @Scheduled annotation.
     @Scheduled is used in the method to perform the scheduling.
 
 **Properties for @Scheduled:**<br />
