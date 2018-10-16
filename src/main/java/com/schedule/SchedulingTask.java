@@ -3,9 +3,7 @@ package com.schedule;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,9 +14,6 @@ public class SchedulingTask {
 	 private static final String everyTenSeconds = "*/10 * * * * *";
 	 private static final long oneMinute = 60000;
 	 
-	 @Autowired
-	 ScheduledAnnotationBeanPostProcessor scheduledAnnotationBeanPostProcessor;
-	
 	@Scheduled(cron = everyTenSeconds, zone = zoneBR)
 	public void scheduleFutureTaskOne() {
 		System.out.println("Task one scheduled to now: " + dateFormat.format(new Date()));
