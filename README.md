@@ -1,5 +1,3 @@
-https://andersondocarmo.wordpress.com/2018/06/28/agendando-tarefas-com-spring-boot/
-
 # Schedule
 
 This project is an example using the Quartz Scheduler with Spring Boot.
