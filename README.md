@@ -1,4 +1,4 @@
-https://andersondocarmo.wordpress.com/2018/06/28/agendando-tarefas-com-spring-boot/
+https://oblogdocarmo.wordpress.com/2018/06/28/agendando-tarefas-com-spring-boot/
 
 # Schedule
 
